@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('./../db');
+const shortid = require('shortid');
 
 router.route('/').get((req, res) => {
   res.send(db.concerts);
