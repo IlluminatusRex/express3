@@ -28,7 +28,7 @@ app.get('*', (req, res) => {
 app.use((req, res) => {
   res.status(404).send('404 not found...');
 });
-mongoose.connect('mongodb://localhost:27017/NewWaveDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://IlluminatusRex:Kuba9621@cluster0.v92vn9f.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 db.once('open', () => {
